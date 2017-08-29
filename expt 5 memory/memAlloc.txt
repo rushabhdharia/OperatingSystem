@@ -1,0 +1,96 @@
+OUTPUT:
+
+Enter no. of holes:
+7
+Enter size of hole 0:
+5
+Enter size of hole 1:
+15
+Enter size of hole 2:
+10
+Enter size of hole 3:
+35
+Enter size of hole 4:
+25
+Enter size of hole 5:
+20
+Enter size of hole 6:
+25
+Enter no. of processes:
+5
+Enter size of process 0:
+10
+Enter size of process 1:
+20
+Enter size of process 2:
+15
+Enter size of process 3:
+30
+Enter size of process 4:
+45
+Size of processes:
+10
+20
+15
+30
+45
+Size of holes
+5
+15
+10
+35
+25
+20
+25
+
+1.First Fit
+2.Best Fit
+3.Worst Fit
+4.Exit
+Choose an option:
+1
+***First Fit***
+P10-->H15
+P20-->H35
+P15-->H25
+P30-->H45
+P45 Not executed
+Internal Fragmentation=30
+External Fragmentation=15
+
+1.First Fit
+2.Best Fit
+3.Worst Fit
+4.Exit
+Choose an option:
+2
+***Best Fit***
+P10-->H10
+P20-->H20
+P15-->H15
+P30-->H35
+P45 Not executed
+Internal Fragmentation=5
+External Fragmentation=0
+
+1.First Fit
+2.Best Fit
+3.Worst Fit
+4.Exit
+Choose an option:
+3
+***Worse Fit***
+P10-->H35
+P20-->H25
+P15-->H25
+P30-->H30
+P45 Not executed
+Internal Fragmentation=40
+External Fragmentation=0
+
+1.First Fit
+2.Best Fit
+3.Worst Fit
+4.Exit
+Choose an option:
+4

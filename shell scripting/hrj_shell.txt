@@ -1,0 +1,98 @@
+a=1
+b=2
+sum=$((a+b))
+echo "sum=$sum"
+
+sum=`expr $a+$b`
+echo "sum=$sum"
+
+
+1. CHANGE PRIVELEGES
+student@student-HP-ProOne-400-G1-AiO:~$ chmod 777 niki.sh
+student@student-HP-ProOne-400-G1-AiO:~$ ls -l
+total 238732
+-rwxrwxrwx  1 student student       48 Sep 27 08:30 niki.sh
+-rw-rw-r--  1 student student       46 Sep 27 08:30 niki.sh~
+drwxr-xr-x 14 student student     4096 Nov  4  2011 ns-allinone-2.35
+-rw-rw-r--  1 student student     1715 Apr 25 11:02 ns-simple.tcl
+-rw-rw-r--  1 student student     1633 Apr 25 11:01 ns-simple.tcl~
+-rw-rw-r--  1 student student       73 Feb 20  2016 open.py
+
+
+2. MAKE DIRECTORY
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ mkdir shell
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ ls 
+search~
+search.c~
+shell
+simple.tcl~
+sssp.c~
+star1.tcl~
+
+
+3. PRINT WORKING DIRECTORY
+student@student-HP-ProOne-400-G1-AiO:~$ pwd
+/home/student
+
+
+4. CREATE FILE
+student@student-HP-ProOne-400-G1-AiO:~$ touch test
+student@student-HP-ProOne-400-G1-AiO:~$ ls
+24           Desktop   Documents  examples.desktop  hello1     hello.odt  Music     Public       shift.java  test      Videos
+achieve.tar  devstack  Downloads  hello             helloexit  hello.tar  Pictures  Release.key  Templates   test.txt
+
+5. REMOVE FILE
+student@student-HP-ProOne-400-G1-AiO:~$ rm test.txt
+student@student-HP-ProOne-400-G1-AiO:~$ ls
+24           Desktop   Documents  examples.desktop  hello1     hello.odt  Music     Public       shift.java  test
+achieve.tar  devstack  Downloads  hello             helloexit  hello.tar  Pictures  Release.key  Templates   Videos
+
+6. COPY FILE
+student@student-HP-ProOne-400-G1-AiO:~$ cp test Desktop/
+student@student-HP-ProOne-400-G1-AiO:~$ cd Desktop/
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ ls
+adhoc.tcl~  Astar  Astar.cpp  hrj_shell.txt  hrj_shell.txt~  jdk1.7.0_79  PPPP.odt  ring.tcl~  shreya1~  simwrls.tcl~  test  wire.tcl~
+
+
+7. MOVE FILE
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ sudo mv test /home/
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ cd 
+student@student-HP-ProOne-400-G1-AiO:~$ ls
+24           Desktop   Documents  examples.desktop  hello1     hello.odt  Music     Public       shift.java  test
+achieve.tar  devstack  Downloads  hello             helloexit  hello.tar  Pictures  Release.key  Templates   Videos
+
+
+8. COPY FOLDER (cp -r)
+student@student-HP-ProOne-400-G1-AiO:~$ mkdir folder
+student@student-HP-ProOne-400-G1-AiO:~$ cd folder
+student@student-HP-ProOne-400-G1-AiO:~/folder$ touch t1
+student@student-HP-ProOne-400-G1-AiO:~/folder$ touch t2
+student@student-HP-ProOne-400-G1-AiO:~/folder$ touch t3
+student@student-HP-ProOne-400-G1-AiO:~/folder$ cd 
+student@student-HP-ProOne-400-G1-AiO:~$ cp -r folder/ Desktop/
+student@student-HP-ProOne-400-G1-AiO:~$ cd Desktop/
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ ls
+adhoc.tcl~  Astar  Astar.cpp  folder  hrj_shell.txt  hrj_shell.txt~  jdk1.7.0_79  PPPP.odt  ring.tcl~  shreya1~  simwrls.tcl~  wire.tcl~
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ cd folder/
+student@student-HP-ProOne-400-G1-AiO:~/Desktop/folder$ ls
+t1  t2  t3
+student@student-HP-ProOne-400-G1-AiO:~/Desktop/folder$
+
+
+9. REMOVE FOLDER
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ rm -r folder
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ ls
+adhoc.tcl~  Astar  Astar.cpp  hrj_shell.txt  hrj_shell.txt~  jdk1.7.0_79  PPPP.odt  ring.tcl~  shreya1~  simwrls.tcl~  wire.tcl~
+
+10. MOVE FOLDER
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ mkdir folder
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ sudo mv folder/ /home/ 
+student@student-HP-ProOne-400-G1-AiO:~/Desktop$ cd 
+student@student-HP-ProOne-400-G1-AiO:~$ ls
+24           Desktop   Documents  examples.desktop  hello   helloexit  hello.tar  Pictures  Release.key  Templates  Videos
+achieve.tar  devstack  Downloads  folder            hello1  hello.odt  Music      Public    shift.java   test
+
+
+
+
+
